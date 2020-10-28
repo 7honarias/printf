@@ -30,7 +30,6 @@ int print_string(va_list list);
 int print_int(va_list list);
 int print_binary(va_list list);
 int print_unsigned(va_list list);
-
 int rot13(char *ch);
 int _putchar(char c);
 int _printf(const char *format, ...);

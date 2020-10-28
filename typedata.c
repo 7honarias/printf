@@ -18,7 +18,6 @@ int (*_typedata(const char *ptr, int argb))(va_list)
 		{"o", print_octa},
 		{"x", print_lowerx},
 		{"X", print_upperx},
-		{"S", print_special},
 		{"r", print_reverse},
 		{"R", print_rot13},
 		{NULL, NULL}
