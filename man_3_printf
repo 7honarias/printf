@@ -1,0 +1,97 @@
+./* printf man page
+.TH man 3 "27 of octuber 2020" "1.2" "_printf man page"
+.SH NAME
+.B _printf
+-A printf function
+.SH SYNOPSIS
+#include "holberton.h"
+
+#include <stdio.h>
+
+#include <stdarg.h>
+
+.RS 0
+int _printf(const char *format, ...)
+.RS 0
+int _putchar(char c)
+.RS 0
+int (*get_pf(char spec))(va_list)
+.RS 0
+int p_int(va_list n)
+.RS 0
+int p_int(va_list n)
+.RS 0
+int p_porcentaje(va_list n)
+.RS 0
+int p_string(va_list n)
+
+.SH DESCRIPTION FOR _PRINTF
+_printf function writes an output according to a format and it prints character, 
+string, float, integer, hexadecimal, octal, decimal values onto the output screen. 
+Printf is a special function because it receives a variable number of arguments.
+The symbol % denotes he beginning of a format mark.
+With the next characters have a sepcial meaning
+
+.RS 0
+\\"     double quote
+.RS 0
+\\\\     backslash
+.RS 0
+\\a     alert
+.RS 0
+\\b     backspace
+.RS 0
+\\c     produce no further output
+.RS 0
+\\e     escape
+.RS 0
+\\f     form feed
+.RS 0
+\\n     new line
+.RS 0
+\\r     carriage return
+.RS 0
+\\t     horizontal tab
+.RS 0
+\\v     vertical tab
+.RS 0
+%%     a single %
+
+.SS RETURN VALUE
+This function returns the number of characters printed, but this function exclude the NULL byte
+.SH OUTPUT CHARACTERS
+To use the _printf function there are some special characters followed by % symbol.
+.RS 3
+%c: Used to print characters
+.RS 0
+%s: Used to print strings
+.RS 0
+%d: Print integers of max and min size of an int type
+.RS 0
+%i: Print integers of max and min size of an int type
+
+.SH EXAMPLES
+Use the _printf to print a string with some variables
+
+#include "holberton.h"
+
+int main(void)
+
+{
+
+	int i = 15;
+
+	int j = 20;
+
+	_printf("We start class at %i:%i", i, j);
+
+	return (0);
+
+}
+
+.SH SEE ALSO
+printf, 3 printf.
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Daniel Jaramillo - Jhon Arias"
